@@ -1,0 +1,79 @@
+const users = [
+    { name: "John", age: 25, occupation: "gardener" },
+    { name: "Lenny", age: 51, occupation: "programmer" },
+    { name: "Andrew", age: 43, occupation: "teacher" },
+    { name: "Peter", age: 81, occupation: "teacher" },
+    { name: "Anna", age: 43, occupation: "teacher" },
+    { name: "Albert", age: 76, occupation: "programmer" },
+    { name: "Adam", age: 47, occupation: "teacher" },
+    { name: "Robert", age: 72, occupation: "driver" },
+  ];
+  
+  function main() {
+    name = "FREELANCERS";
+    const root = (document.getElementById("root").style.color = "green");
+    const h1 = document.createElement("h1");
+    h1.innerText = name;
+    root.appendChild(h1);
+  
+    const ul = document.createElement("ul");
+  
+    for (let i = 0; i < users.length; i++) {
+      const li = document.createElement("li");
+      li.innerText = JSON.stringify(users[i]);
+  
+      ul.appendChild(li);
+  
+      root.appendChild(ul);
+      console.log(users[i]);
+    }
+  }
+  
+// Define an array of user objects
+const users = [
+    { name: "John", age: 25, occupation: "gardener" },
+    { name: "Lenny", age: 51, occupation: "programmer" },
+    { name: "Andrew", age: 43, occupation: "teacher" },
+    { name: "Peter", age: 81, occupation: "teacher" },
+    { name: "Anna", age: 43, occupation: "teacher" },
+    { name: "Albert", age: 76, occupation: "programmer" },
+    { name: "Adam", age: 47, occupation: "teacher" },
+    { name: "Robert", age: 72, occupation: "driver" },
+];
+
+// Define a function named "main"
+function main() {
+    // Set the variable "name" to "FREELANCERS"
+    name = "FREELANCERS";
+    
+    // Get the element with the ID "root" and change its text color to green
+    const root = (document.getElementById("root").style.color = "green");
+    
+    // Create an <h1> element and set its text to the value of the "name" variable
+    const h1 = document.createElement("h1");
+    h1.innerText = name;
+    
+    // Append the <h1> element to the "root" element
+    root.appendChild(h1);
+
+    // Create a <ul> element
+    const ul = document.createElement("ul");
+
+    // Loop through the "users" array
+    for (let i = 0; i < users.length; i++) {
+        // Create an <li> element
+        const li = document.createElement("li");
+        
+        // Set the text of the <li> element to the JSON representation of the current user
+        li.innerText = JSON.stringify(users[i]);
+        
+        // Append the <li> element to the <ul> element
+        ul.appendChild(li);
+        
+        // Append the <ul> element to the "root" element
+        root.appendChild(ul);
+        
+        // Log the current user to the console
+        console.log(users[i]);
+    }
+}
